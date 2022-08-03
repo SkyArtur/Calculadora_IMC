@@ -77,22 +77,25 @@ class Calculadora extends CalculoDeIMC{
     constructor(nome_classe){
         super(nome_classe)
         this.msg = new Mensagens()
+        this.cor = [
+            'rgb(235, 177, 41)', 'rgb(37, 147, 54)', 
+            'rgb(235, 177, 41)', 'rgb(219, 72, 72)']
     }
     realizarCalculo(){
         let imc = this.calcularImc()
         this.setMostradorIndice(imc)
         if(imc < 18.5){
-            this.setCampoMensagem(this.msg.magreza, 'rgb(235, 177, 41)')
+            this.setCampoMensagem(this.msg.magreza, this.cor[0])
         }else if(imc >= 18.5 && imc < 25){
-            this.setCampoMensagem(this.msg.normal, 'rgb(37, 147, 54)')
+            this.setCampoMensagem(this.msg.normal, this.cor[1])
         }else if(imc >= 25 && imc < 30){
-            this.setCampoMensagem(this.msg.sobrepeso, 'rgb(235, 177, 41)')
+            this.setCampoMensagem(this.msg.sobrepeso, this.cor[2])
         }else if(imc >= 30 && imc < 35){
-            this.setCampoMensagem(this.msg.obesidadeI, 'rgb(219, 72, 72)')
+            this.setCampoMensagem(this.msg.obesidadeI, this.cor[3])
         }else if(imc >= 35 && imc < 40){
-            this.setCampoMensagem(this.msg.obesidadeII, 'rgb(219, 72, 72)')
+            this.setCampoMensagem(this.msg.obesidadeII, this.cor[3])
         }else if(imc > 40){
-            this.setCampoMensagem(this.msg.obesidadeIII, 'rgb(219, 72, 72)')
+            this.setCampoMensagem(this.msg.obesidadeIII, this.cor[3])
         }else{
             this.setMostradorIndice(0)
             this.setCampoMensagem(this.msg.erro_entrada)
