@@ -6,10 +6,10 @@ Artur dos Santos Shon
 /*A classe Mensagens é um objeto criado para armazenar as mensagens
 que serão direcionadas ao usuário!*/
 class Mensagens{
-    magreza = "&emsp;MAGREZA - O seu IMC indica  que você encontra-se abaixo do seu "+
-    "peso ideal. Uma boa nutrição, retarda o envelhecimento da pele e a perca de massa muscular."
+    magreza = "&emsp;MAGREZA - O seu IMC indica que você encontra-se abaixo do seu "+
+    "peso ideal. Uma boa nutrição, retarda o envelhecimento da pele e a perda de massa muscular."
     
-    normal = "&emsp;PESO IDEAL - O seu IMC indica  que você encontra-se no seu peso ideal. "+
+    normal = "&emsp;PESO IDEAL - O seu IMC indica que você encontra-se no seu peso ideal. "+
     "Siga mantendo uma boa nutrição."
 
     sobrepeso = "&emsp;SOBREPESO - O seu IMC indica  que você encontra-se com sobrepeso. "+
@@ -19,11 +19,11 @@ class Mensagens{
     "O aumento da circuferência abdominal representa risco de acidentes cardiovasculares e diabetes."
     
     obesidadeII = "&emsp;OBESIDADE II - O seu IMC indica  que você encontra-se com obesidade do tipo II. "+
-    "Condições perigosas como apnéia do sono, falta de ar e problemas osteoarticulares podem ser decorrentes " +
-    "do exccesso de peso."
+    "Condições perigosas como apnéia do sono, falta de ar e problemas osteoarticulares podem ser decorrentes "+
+    "do excesso de peso."
     
     obesidadeIII = "&emsp;OBESIDADE III - O seu IMC indica  que você encontra-se com obesidade do tipo III. "+
-    "Dificuldade para se movimentar pode levar a um tempo maior deitado e o aumento do risco do aparecimento " +
+    "Dificuldades para se movimentar pode levar a um tempo maior deitado e um aumento no risco do aparecimento "+
     "de escaras na pele."
 
     erro_entrada = "&emsp;Entrada inválida de dados. Verifique os valores inseridos!"+'<br>'+
@@ -42,9 +42,9 @@ class ElementosDeInteracaoUsuario{
     
     getAltura = () => {return this.elementos[1].value}
     
-    setIndice = (imc) => {return this.elementos[2].innerHTML = Math.round(imc)}
+    setMostradorIndice = (imc) => {return this.elementos[2].innerHTML = Math.round(imc)}
     
-    setMensagem(mensagem, cor='inherit'){
+    setCampoMensagem(mensagem, cor='inherit'){
         this.elementos[3].style.color = cor
         return this.elementos[3].innerHTML = mensagem
     }
@@ -80,22 +80,22 @@ class Calculadora extends CalculoDeIMC{
     }
     realizarCalculo(){
         let imc = this.calcularImc()
-        this.setIndice(imc)
+        this.setMostradorIndice(imc)
         if(imc < 18.5){
-            this.setMensagem(this.msg.magreza, 'rgb(235, 177, 41)')
+            this.setCampoMensagem(this.msg.magreza, 'rgb(235, 177, 41)')
         }else if(imc >= 18.5 && imc < 25){
-            this.setMensagem(this.msg.normal, 'rgb(37, 147, 54)')
+            this.setCampoMensagem(this.msg.normal, 'rgb(37, 147, 54)')
         }else if(imc >= 25 && imc < 30){
-            this.setMensagem(this.msg.sobrepeso, 'rgb(235, 177, 41)')
+            this.setCampoMensagem(this.msg.sobrepeso, 'rgb(235, 177, 41)')
         }else if(imc >= 30 && imc < 35){
-            this.setMensagem(this.msg.obesidadeI, 'rgb(219, 72, 72)')
+            this.setCampoMensagem(this.msg.obesidadeI, 'rgb(219, 72, 72)')
         }else if(imc >= 35 && imc < 40){
-            this.setMensagem(this.msg.obesidadeII, 'rgb(219, 72, 72)')
+            this.setCampoMensagem(this.msg.obesidadeII, 'rgb(219, 72, 72)')
         }else if(imc > 40){
-            this.setMensagem(this.msg.obesidadeIII, 'rgb(219, 72, 72)')
+            this.setCampoMensagem(this.msg.obesidadeIII, 'rgb(219, 72, 72)')
         }else{
-            this.setIndice(0)
-            this.setMensagem(this.msg.erro_entrada)
+            this.setMostradorIndice(0)
+            this.setCampoMensagem(this.msg.erro_entrada)
         }
     }
 }
