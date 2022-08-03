@@ -1,0 +1,64 @@
+<!--
+Bacharelado em Engenharia de Software - EAD - UNINTER - 2021
+Artur dos Santos Shon
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="principal">
+
+    <!--ÍNICIO - frame principal da calculadora IMC-->
+    <div class="frame">
+
+        <!--ÍNICIO - barra superior do frame principal-->
+        <div class="topo">
+            <a href="/index.html">Calculadora de Índice de Massa Corporal</a>
+        </div>
+        <!--FIM - barra superior do frame principal-->
+
+        <!--ÍNICIO - corpo de interações do frame principal-->
+        <div class="corpo">
+
+            <!--ÍNICIO - campo para entrada de dados-->
+            <div class="entrada">
+                <label id="label1">Digite o seu peso:</label>
+                <label id="label2">Digite a sua altura:</label>
+                <input class="elementos" id="peso" type="text" placeholder="quilogramas(kg)">
+                <input class="elementos" id="altura" type="text" placeholder="metros(m)">
+                <input id="botao" type="button" value="Calcular IMC" onclick="mostrar('elementos')">
+            </div>
+            <!--FIM - campo para entrada de dados-->
+
+            <!--ÍNICIO - mostrador numérico do IMC-->
+            <div id="indice">
+                <p id="imc">IMC</p>
+                <p class="elementos" id="valor">0</p>
+            </div>
+            <!--FIM - mostrador numérico do IMC-->
+
+            <!--ÍNICIO - campo de mensagem-->
+            <div class="mensagem">
+                <p class="elementos" id="saida">O IMC, ou índice de massa corporal,
+                    embora não seja a forma mais exata de verificar se uma pessoa 
+                    encontra-se dentro do peso ideal, por não levar em  consideração 
+                    constituição corporal, é muito utilizado como forma de avaliação
+                    rápida em individuos saudáveis. 
+                </p>
+            </div>
+            <!--FIM - campo de mensagem-->
+
+        </div>
+        <!--FIM - corpo de interações do frame principal-->
+
+    </div>
+    <!--FIM - frame principal da calculadora IMC-->
+
+    <!--SCRIPTS-->
+    <script src="/script.js"></script>
+</body>
+</html>
