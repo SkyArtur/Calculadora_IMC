@@ -13,7 +13,8 @@
 ![GitHub forks](https://img.shields.io/github/forks/SkyArtur/Calculadora_IMC?style=social)
 
 Este projeto tem por objetivo trabalhar conhecimentos básicos em HTML, CSS e JavaScript. Um exercício comum no aprendizado
-de programação, . Foram explorados: 
+de programação, a calculadora de IMC é um exercício muito interessante onde pude trabalhar uma série de conhecimentos
+básicos, muito utéis no dia a dia. Foram explorados: 
 - CSS GridLayout
 - Estilização CSS
 - Manipulação de elementos HTML por JS.
