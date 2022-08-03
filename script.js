@@ -78,7 +78,7 @@ class Calculadora extends CalculoDeIMC{
         super(nome_classe)
         this.msg = new Mensagens()
     }
-    calcular(){
+    realizarCalculo(){
         let imc = this.calcularImc()
         this.setIndice(imc)
         if(imc < 18.5){
@@ -100,9 +100,10 @@ class Calculadora extends CalculoDeIMC{
     }
 }
 
-/*A função executarCalculo() instância a classe Calculadora e chama seu 
-método calcular()*/
-function executarCalculo(classe){
-    let elemento = new Calculadora(classe)
-    elemento.calcular()
+/*A função executarCalculo() recebe como parâmetro, o nome da classe dos elementos
+HTML para entrada e saída de dados. Em seguida instância a classe Calculadora e 
+passa para ela o seu parâmetro de entrada, por fim, chama seu método realizarCalculo().*/
+function executarCalculadora(classe){
+    let calculadoraIMC = new Calculadora(classe)
+    calculadoraIMC.realizarCalculo()
 }
