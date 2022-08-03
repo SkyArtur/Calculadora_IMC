@@ -77,9 +77,8 @@ class Calculadora extends CalculoDeIMC{
     constructor(nome_classe){
         super(nome_classe)
         this.msg = new Mensagens()
-        this.cor = [
-            'rgb(235, 177, 41)', 'rgb(37, 147, 54)', 
-            'rgb(235, 177, 41)', 'rgb(219, 72, 72)']
+        this.cor = ['rgb(235, 177, 41)', 'rgb(37, 147, 54)', 
+                    'rgb(235, 177, 41)', 'rgb(219, 72, 72)']
     }
     realizarCalculo(){
         let imc = this.calcularImc()
