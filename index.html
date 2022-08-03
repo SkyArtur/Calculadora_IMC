@@ -11,53 +11,37 @@ Artur dos Santos Shon
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="principal">
+    <div class="frame"><!--ÍNICIO - frame principal da calculadora IMC-->
 
-    <!--ÍNICIO - frame principal da calculadora IMC-->
-    <div class="frame">
-
-        <!--ÍNICIO - barra superior do frame principal-->
-        <div class="topo">
+        <div class="topo"><!--ÍNICIO - barra superior do frame principal-->
             <a href="/index.html">Calculadora de Índice de Massa Corporal</a>
-        </div>
-        <!--FIM - barra superior do frame principal-->
+        </div><!--FIM - barra superior do frame principal-->
 
-        <!--ÍNICIO - corpo de interações do frame principal-->
-        <div class="corpo">
-
-            <!--ÍNICIO - campo para entrada de dados-->
-            <div class="entrada">
+        <div class="corpo"> <!--ÍNICIO - corpo de interações do frame principal-->
+            <div class="entrada"><!--ÍNICIO - campo para entrada de dados-->
                 <label id="label1">Digite o seu peso:</label>
                 <label id="label2">Digite a sua altura:</label>
                 <input class="elementos" id="peso" type="text" placeholder="quilogramas(kg)">
                 <input class="elementos" id="altura" type="text" placeholder="metros(m)">
                 <input id="botao" type="button" value="Calcular IMC" onclick="executarCalculadora('elementos')">
-            </div>
-            <!--FIM - campo para entrada de dados-->
+            </div><!--FIM - campo para entrada de dados-->
 
-            <!--ÍNICIO - mostrador numérico do IMC-->
-            <div id="indice">
+            <div id="indice"><!--ÍNICIO - mostrador numérico do IMC-->
                 <p id="imc">IMC</p>
                 <p class="elementos" id="valor">0</p>
-            </div>
-            <!--FIM - mostrador numérico do IMC-->
-
-            <!--ÍNICIO - campo de mensagem-->
-            <div class="mensagem">
+            </div><!--FIM - mostrador numérico do IMC-->
+            
+            <div class="mensagem"><!--ÍNICIO - campo de mensagem-->
                 <p class="elementos" id="saida">&emsp; O IMC, ou índice de massa corporal,
                     embora não seja a forma mais exata de verificar se uma pessoa 
                     encontra-se dentro do peso ideal, por não levar em  consideração 
                     constituição corporal, é muito utilizado como forma de avaliação
                     rápida em individuos saudáveis. 
                 </p>
-            </div>
-            <!--FIM - campo de mensagem-->
-
-        </div>
-        <!--FIM - corpo de interações do frame principal-->
-
-    </div>
-    <!--FIM - frame principal da calculadora IMC-->
-
+            </div><!--FIM - campo de mensagem-->
+        </div><!--FIM - corpo de interações do frame principal-->
+    </div><!--FIM - frame principal da calculadora IMC-->
+    
     <!--SCRIPTS-->
     <script src="/script.js"></script>
 </body>
