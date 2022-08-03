@@ -16,13 +16,15 @@ class Mensagens{
     "É importante manter uma boa dieta e a prática de exercícios regulares."
     
     obesidadeI = "&emsp;OBESIDADE I - O seu IMC indica  que você encontra-se com obesidade do tipo I. "+
-    "O aumento da circuferência abdominal representa risco de acidentes cardiovasculares."
+    "O aumento da circuferência abdominal representa risco de acidentes cardiovasculares e diabetes."
     
-    obesidadeII = "&emsp;OBESIDADE II - O seu IMC indica  que você encontra-se com obesidade do tipo I. "+
-    "O aumento da circuferência abdominal representa risco de acidentes cardiovasculares."
+    obesidadeII = "&emsp;OBESIDADE II - O seu IMC indica  que você encontra-se com obesidade do tipo II. "+
+    "Condições perigosas como apnéia do sono, falta de ar e problemas osteoarticulares podem ser decorrentes " +
+    "do exccesso de peso."
     
-    obesidadeIII = "&emsp;OBESIDADE III - O seu IMC indica  que você encontra-se com obesidade do tipo I. "+
-    "O aumento da circuferência abdominal representa risco de acidentes cardiovasculares."
+    obesidadeIII = "&emsp;OBESIDADE III - O seu IMC indica  que você encontra-se com obesidade do tipo III. "+
+    "Dificuldade para se movimentar pode levar a um tempo maior deitado e o aumento do risco do aparecimento " +
+    "de escaras na pele."
 
     erro_entrada = "&emsp;Entrada inválida de dados. Verifique os valores inseridos!"+'<br>'+
     "<strong>ATENÇÃO:</strong> Para separar casas decimais, utilize o ponto ao invés da vírgula."
