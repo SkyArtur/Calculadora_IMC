@@ -69,7 +69,7 @@ class CalculoDeIMC extends ElementosDeInteracaoUsuario{
 
 /*A classe Calculadora é filha de CalculoIMC e estabelece uma relação
 de associação com a classe Mensagens. Assim como suas classes mães, ela deve
-receber o nome da classe dos elementos HTML. Seu método calcular() executa o calculo 
+receber o nome da classe dos elementos HTML. Seu método realizarCalculo() executa o calculo 
 de IMC e setta o seu valor no campo destinado ao Indice, em seguida, testa o valor de imc
 e setta uma mensagem adequada ao valor de imc. Ela pode tratar a entrada de dados de forma
 simples, apenas verificando se o valor de imc é um número*/
