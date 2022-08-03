@@ -1,3 +1,8 @@
+/*
+Bacharelado em Engenharia de Software - EAD - UNINTER - 2021
+Artur dos Santos Shon
+*/
+
 /*A classe Mensagens é um objeto criado para armazenar as mensagens
 que serão direcionadas ao usuário!*/
 class Mensagens{
